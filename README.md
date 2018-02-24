@@ -26,14 +26,14 @@ Data that can fit o a local computer, in the scale of 0-32 GB RAM. What can we d
 * HDFS also duplicates block of data for fault tolerance
 * It uses MapReduce which allows computations on the data
 
-  ###HDFS
+  #### HDFS
   * HDFS will use blocks of data, with a size of 128 MB by default
   * Each of these blocks is replicated 3 times
   * The blocks are distributed in a way to support fault tolerance
   * Smaller blocks provide more parallelization during processing
   * Multiple copies of a block prevent loss of data due to a failure of a node
   
-  ###MapReduce
+  #### MapReduce
   * MapReduce is a way of splitting a computation task to a distributed set of files (such as HDFS)
   * It consists of a Job Tracker and multiple Task Trackers
   * The Job Tracker sends code to run on the Task Trackers
